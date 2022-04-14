@@ -12,15 +12,19 @@ from fake_useragent import UserAgent
 from multiprocessing import Pool
 import time
 import random
+
 # -----------------------------------------------
 # Переменные
 # -----------------------------------------------
-countPrecess = 5   # Кол-во процессов / открытых браузеров
-countStarts = 100    # Кол-во запусков (циклов)
+countPrecess = 5  # Кол-во процессов / открытых браузеров
+countStarts = 100  # Кол-во запусков (циклов)
 # ссылка на объявление
 targetUrl = 'https://www.farpost.ru/vladivostok/tech/computers/notebooks/noutbuk-acer-100442266.html'
 
 
+# -----------------------------------------------
+# Функция накрутки
+# -----------------------------------------------
 def wrapping(xData):
     # -------------------------------------------
     # User-Agent
